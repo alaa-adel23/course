@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.crl{
+    clear: both;
+}
+.continare{
+    width: 80%;
+    margin: auto;
+}
+.parent{
+    
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+   padding: 10px;
+}
+.parent img{
+    width: 100%;
+    transition: transform 2s;
+}
+.parent:hover img{
+    transform: scale(1.2,1.2);
+}
+.chaild{
+    background-color: rgba(112, 128, 144,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 2s;
+    transition-delay: 1s;
+    overflow: hidden;
+    
+}
+.parent:hover .chaild{
+    transform: rotate(360deg);
+    opacity: 1;
+}
+.chaild h2{
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+    transition-delay: 3s;
+    
+    
+}
+.chaild p{
+    position: relative;
+    left: 100%;
+    transition: left 2s;
+    transition-delay: 4s;
+   
+}
+.parent:hover h2{
+    left: 0;
+    font-size: 30px;
+    padding: 50px ;
+}
+.parent:hover p{
+    left: 0;
+    font-size: 20px;
+    padding:30px ;
+}
